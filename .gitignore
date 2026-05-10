@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.Python
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Reference clone of the original R package; not part of this Python repo.
+source/
+
+# Local scratch data
+tests/_tmp_fred.csv

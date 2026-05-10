@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vinecopulavar"
+version = "0.1.0"
+description = "Native Python port of core VineCopula functionality for vine copula VAR workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-2.0-or-later"
+authors = [
+  { name = "Native Python port generated from tnagler/VineCopula" }
+]
+dependencies = [
+  "numpy>=1.24"
+]
+
+[project.optional-dependencies]
+scipy = ["scipy>=1.10"]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
